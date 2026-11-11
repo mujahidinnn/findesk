@@ -1,0 +1,27 @@
+import { z } from "npm:zod@4";
+import { corsHeaders, errorResponse, HttpError, jsonResponse, readJson } from "../_shared/cors.ts";
+import { adminClient, requireCaller, requireTargetBelow } from "../_shared/caller.ts";
+
+const Body = z.object({ user_id: z.uuid() });
+
+Deno.serve(async (req) => {
+  if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders(req) });
+  try {
+    const caller = await requireCaller(req, "users", "delete");
+    const parsed = Body.safeParse(await readJson(req));
+    if (!parsed.success) throw new HttpError(400, "user_id is required");
+    const { user_id } = parsed.data;
+    if (user_id === caller.id) throw new HttpError(400, "You cannot revoke your own account");
+    await requireTargetBelow(caller, user_id);
+
+    const { error } = await caller.admin.auth.admin.updateUserById(user_id, { ban_duration: "876000h" });
+    if (error) throw new HttpError(400, error.message);
+
+    await caller.admin.from("t_audit_log").insert({
+      actor_id: caller.id, action: "update", entity_type: "user", entity_id: user_id, detail: { banned: true },
+    });
+    return jsonResponse(req, { success: true });
+  } catch (err) {
+    return errorResponse(req, err, "delete-user", adminClient());
+  }
+});

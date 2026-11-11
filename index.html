@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinDesk · Finance &amp; Accounting</title>
+    <meta name="description" content="Finance and accounting for growing companies: general ledger, receivables, payables, cash and bank, Indonesian tax, fixed assets, budgets and financial statements." />
+    <meta name="author" content="Mujahidin" />
+    <link rel="canonical" href="https://findesk.mujahidin.my.id/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FinDesk" />
+    <meta property="og:url" content="https://findesk.mujahidin.my.id/" />
+    <meta property="og:title" content="FinDesk · Finance &amp; Accounting" />
+    <meta property="og:description" content="Clean books, numbers you can defend. General ledger, receivables, payables, cash and bank, Indonesian tax, fixed assets, budgets and financial statements in one system." />
+    <meta property="og:image" content="https://findesk.mujahidin.my.id/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="FinDesk dashboard: clean books, numbers you can defend" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FinDesk · Finance &amp; Accounting" />
+    <meta name="twitter:description" content="General ledger, receivables, payables, cash and bank, Indonesian tax, fixed assets, budgets and financial statements in one system." />
+    <meta name="twitter:image" content="https://findesk.mujahidin.my.id/og.png" />
+    <meta name="theme-color" content="#1B2550" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"FinDesk","applicationCategory":"BusinessApplication","operatingSystem":"Web","license":"https://opensource.org/licenses/MIT","url":"https://findesk.mujahidin.my.id/","image":"https://findesk.mujahidin.my.id/og.png","description":"Finance and accounting for growing companies: general ledger, receivables, payables, cash and bank, Indonesian tax, fixed assets, budgets and financial statements.","author":{"@type":"Person","name":"Mujahidin"}}</script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <script>try{var m=localStorage.getItem("vueuse-color-scheme")||"auto";if(m==="dark"||(m==="auto"&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.classList.add("dark")}catch(e){}</script>
+    <style>
+      #splash{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#fafafb}
+      .dark #splash{background:#0f1324}
+      #splash .coin{stroke-dasharray:1;stroke-dashoffset:1;animation:splash-draw 2.4s ease-out infinite}
+      #splash .f{opacity:0;animation:splash-fade .6s ease-out .1s forwards}
+      @keyframes splash-draw{0%{stroke-dashoffset:1}50%,100%{stroke-dashoffset:0}}
+      @keyframes splash-fade{to{opacity:1}}
+      @media (prefers-reduced-motion:reduce){#splash .coin,#splash .f{animation:none;stroke-dashoffset:0;opacity:1}}
+    </style>
+  </head>
+  <body>
+    <div id="splash" role="status" aria-label="Loading FinDesk">
+      <svg width="56" height="56" viewBox="0 0 24 24" aria-hidden="true">
+        <defs><linearGradient id="splash-g" gradientUnits="userSpaceOnUse" x1="20" y1="3" x2="4" y2="21"><stop offset="0" stop-color="#8C9BF2" /><stop offset="1" stop-color="#1B2550" /></linearGradient></defs>
+        <g class="f" fill="url(#splash-g)"><rect x="3.5" y="3" width="3.4" height="18" rx="1.7" /><rect x="3.5" y="3" width="17" height="3.4" rx="1.7" /><rect x="3.5" y="10.3" width="11.5" height="3.4" rx="1.7" /></g>
+        <circle class="coin" pathLength="1" cx="16.6" cy="17.6" r="3.2" fill="none" stroke="url(#splash-g)" stroke-width="2.1" />
+      </svg>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

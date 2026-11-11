@@ -1,0 +1,474 @@
+{
+  "dashboard": {
+    "cashPosition": "Cash & bank position",
+    "cashAsOf": "Book balance as of {date}",
+    "openCash": "Open cash & bank",
+    "noBanks": "No active cash or bank accounts yet.",
+    "receivable": "Accounts receivable",
+    "payable": "Accounts payable",
+    "overdue": "Overdue {amount}",
+    "revenue": "Revenue",
+    "expense": "Expenses",
+    "expenseSub": "Expenses {amount}",
+    "netIncome": "Net income",
+    "netMargin": "Net margin {n}%",
+    "net": "Net income",
+    "grossMargin": "Gross margin",
+    "grossMarginSub": "Gross profit ÷ sales",
+    "currentRatio": "Current ratio",
+    "currentRatioSub": "Current assets ÷ current liabilities",
+    "dsoDpo": "DSO / DPO (days)",
+    "dsoDpoSub": "Average days to collect / to pay",
+    "approvals": "Awaiting approval",
+    "approvalsWaiting": "Documents need a decision",
+    "approvalsClear": "Queue is empty",
+    "monthly": "Revenue vs expenses, 12 months",
+    "expenseBreakdown": "Expense breakdown",
+    "cashFlow": "Cash in & out per month",
+    "cashIn": "Cash in",
+    "cashOut": "Cash out",
+    "forecast": "90-day cash forecast",
+    "forecastNet": "Net {amount}",
+    "forecastHint": "From unpaid invoices and bills by due date; overdue items fall in this week.",
+    "expectedIn": "Expected in",
+    "expectedOut": "Expected out",
+    "buckets": {
+      "d0_7": "0–7 days",
+      "d8_30": "8–30 days",
+      "d31_60": "31–60 days",
+      "d61_90": "61–90 days"
+    },
+    "topCustomers": "Top customers (net sales)",
+    "seeAll": "See all",
+    "actions": {
+      "invoice": "New invoice",
+      "bill": "New bill",
+      "journal": "New journal"
+    },
+    "cashVs": "vs {month}"
+  },
+  "reports": {
+    "tabs": {
+      "balance": "Balance sheet",
+      "income": "Income statement",
+      "cashflow": "Cash flow",
+      "trial": "Trial balance",
+      "equity": "Changes in equity"
+    },
+    "account": "Account",
+    "asOf": "As of {date}",
+    "asOfLabel": "As of",
+    "compareWith": "Compare",
+    "hideZero": "Hide zero balances",
+    "change": "Change",
+    "totalOf": "Total {name}",
+    "balanced": "Balanced",
+    "difference": "Difference {amount}",
+    "allCostCenters": "All cost centers",
+    "allProjects": "All projects",
+    "bs": {
+      "assets": "Assets",
+      "currentAssets": "Current assets",
+      "nonCurrentAssets": "Non-current assets",
+      "totalAssets": "Total assets",
+      "liabilitiesEquity": "Liabilities and equity",
+      "currentLiabilities": "Current liabilities",
+      "longTermLiabilities": "Long-term liabilities",
+      "totalLiabilities": "Total liabilities",
+      "equity": "Equity",
+      "cye": "Current year earnings (not yet closed)",
+      "totalLiabilitiesEquity": "Total liabilities and equity",
+      "check": "Assets = Liabilities + Equity ({date})"
+    },
+    "is": {
+      "revenue": "Revenue",
+      "cogs": "Cost of goods sold",
+      "grossProfit": "Gross profit",
+      "opex": "Operating expenses",
+      "operatingProfit": "Operating profit",
+      "otherIncome": "Other income",
+      "otherExpense": "Other expenses",
+      "profitBeforeTax": "Profit before tax",
+      "tax": "Income tax expense",
+      "netIncome": "Net income",
+      "ofRevenue": "% of revenue",
+      "check": "Net income = total revenue − total expenses in the ledger"
+    },
+    "cf": {
+      "operating": "Operating activities",
+      "investing": "Investing activities",
+      "financing": "Financing activities",
+      "operatingTotal": "Net cash from operating activities",
+      "investingTotal": "Net cash from investing activities",
+      "financingTotal": "Net cash from financing activities",
+      "netIncome": "Net income (loss)",
+      "changeIn": "Change in {name}",
+      "none": "No movement",
+      "netChange": "Net increase (decrease) in cash",
+      "opening": "Cash & bank at start of period",
+      "closing": "Cash & bank at end of period",
+      "hint": "Indirect method: net income adjusted for changes in non-cash accounts. Bracketed amounts are cash outflows.",
+      "check": "Closing cash matches the cash & bank book balance ({amount})"
+    },
+    "tb": {
+      "opening": "Opening balance",
+      "closing": "Closing balance",
+      "excludeClosing": "Exclude closing entries",
+      "hint": "Positive = debit, bracketed = credit. Click an account to open its ledger.",
+      "check": "Total debits = total credits",
+      "checkClosing": "Closing balances of all accounts sum to zero"
+    },
+    "eq": {
+      "opening": "Opening balance",
+      "movement": "Movement",
+      "closing": "Closing balance",
+      "total": "Total equity",
+      "explain": "Movement explained",
+      "netIncome": "Net income for the period (income statement)",
+      "other": "Other changes (capital, dividends, corrections)",
+      "totalMovement": "Total equity movement",
+      "check": "Closing equity = total equity on the balance sheet"
+    }
+  },
+  "audit": {
+    "title": "Audit trail",
+    "when": "Time",
+    "actor": "User",
+    "action": "Action",
+    "entity": "Record",
+    "changes": "Changed fields",
+    "field": "Field",
+    "before": "Before",
+    "after": "After",
+    "system": "System",
+    "allEntities": "All records",
+    "allActors": "All users",
+    "noChanges": "No field changes recorded.",
+    "limited": "Showing the {n} latest entries. Narrow the date range or filters to see others.",
+    "actions": {
+      "insert": "Create",
+      "update": "Update",
+      "delete": "Delete",
+      "reset": "Data reset"
+    },
+    "entities": {
+      "invoice": "Invoice / bill",
+      "payment": "Receipt / payment",
+      "t_cash_txns": "Cash in / out",
+      "t_bank_transfers": "Account transfer",
+      "t_expense_claims": "Expense claim",
+      "t_bank_statements": "Bank statement",
+      "asset": "Fixed asset",
+      "period": "Period",
+      "fiscal_year": "Fiscal year",
+      "m_accounts": "Chart of accounts",
+      "m_account_map": "Account mapping",
+      "m_taxes": "Tax",
+      "m_partners": "Customers & vendors",
+      "m_bank_accounts": "Cash & bank accounts",
+      "m_currencies": "Currency",
+      "settings": "Company settings",
+      "profile": "User profile",
+      "role_permission": "Role permission",
+      "access_override": "User access override"
+    }
+  },
+  "settings": {
+    "tabs": {
+      "company": "Company",
+      "accountMap": "Account mapping",
+      "currencies": "Currencies",
+      "terms": "Payment terms",
+      "users": "Users"
+    },
+    "company": {
+      "identity": "Company identity",
+      "logo": "Logo (PNG/JPG/WebP, max. 2 MB)",
+      "name": "Display name",
+      "legalName": "Legal name",
+      "legalNameHint": "e.g. PT Nusantara Solusi",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "timezone": "Time zone",
+      "tax": "Tax",
+      "isPkp": "VAT-registered (PKP)",
+      "isPkpHint": "Must charge VAT and issue tax invoices.",
+      "approval": "Approval",
+      "requireJournalApproval": "Manual journals need approval",
+      "requireJournalApprovalHint": "Manual journals are submitted and approved by someone else before posting.",
+      "approvalThreshold": "Approval threshold",
+      "approvalThresholdHint": "Vendor bills, payments and cash out at or above this amount must be approved.",
+      "documents": "Documents",
+      "invoiceFooter": "Invoice footer",
+      "invoiceFooterHint": "e.g. bank account for transfers",
+      "prefixes": "Document number prefixes",
+      "prefixesHint": "The server numbers documents on posting: PREFIX/YEAR/MONTH/SEQ."
+    },
+    "zones": {
+      "Asia/Jakarta": "WIB (Asia/Jakarta)",
+      "Asia/Makassar": "WITA (Asia/Makassar)",
+      "Asia/Jayapura": "WIT (Asia/Jayapura)"
+    },
+    "prefixKinds": {
+      "journal": "Manual journal",
+      "sales_invoice": "Sales invoice",
+      "sales_credit": "Credit note",
+      "purchase_bill": "Vendor bill",
+      "purchase_debit": "Debit note",
+      "payment_in": "Receipt",
+      "payment_out": "Payment",
+      "cash_in": "Cash in",
+      "cash_out": "Cash out",
+      "transfer": "Transfer",
+      "expense": "Expense claim",
+      "asset": "Fixed asset",
+      "depreciation": "Depreciation",
+      "vat": "VAT settlement",
+      "fx": "FX revaluation",
+      "closing": "Closing entry",
+      "budget": "Budget"
+    },
+    "accountMap": {
+      "title": "System account mapping",
+      "intro": "Accounts the system uses when it creates journals automatically. Change them only if your chart differs; changes apply to new transactions.",
+      "keys": {
+        "receivable": {
+          "label": "Accounts receivable",
+          "body": "Customer control account. Every invoice and receipt is booked here per customer."
+        },
+        "payable": {
+          "label": "Accounts payable",
+          "body": "Vendor control account. Every bill and payment is booked here per vendor."
+        },
+        "vat_payable": {
+          "label": "VAT payable",
+          "body": "Receives output minus input VAT on VAT settlement when tax is owed."
+        },
+        "vat_overpaid": {
+          "label": "VAT overpaid",
+          "body": "Receives the VAT balance on settlement when input exceeds output VAT."
+        },
+        "employee_payable": {
+          "label": "Employee claims payable",
+          "body": "Holds approved expense claims until they are paid."
+        },
+        "retained_earnings": {
+          "label": "Retained earnings",
+          "body": "Receives net income (loss) when the fiscal year is closed."
+        },
+        "opening_equity": {
+          "label": "Opening balance equity",
+          "body": "Offsets opening balances entered for the first time."
+        },
+        "fx_gain": {
+          "label": "FX gain",
+          "body": "Exchange gains on settlement or revaluation of foreign currency."
+        },
+        "fx_loss": {
+          "label": "FX loss",
+          "body": "Exchange losses on settlement or revaluation of foreign currency."
+        },
+        "rounding": {
+          "label": "Rounding difference",
+          "body": "Holds small rounding residues (max. 1) so foreign-currency journals balance."
+        },
+        "bank_fee": {
+          "label": "Bank charges",
+          "body": "Admin or transfer fees deducted by the bank on receipts or payments."
+        },
+        "asset_gain": {
+          "label": "Gain on asset disposal",
+          "body": "Gain when a fixed asset is sold above its book value."
+        },
+        "asset_loss": {
+          "label": "Loss on asset disposal",
+          "body": "Loss when a fixed asset is sold or written off below its book value."
+        },
+        "sales_revenue": {
+          "label": "Sales revenue",
+          "body": "Default revenue account for invoice lines without an item that has its own account."
+        },
+        "purchase_expense": {
+          "label": "Default purchase account",
+          "body": "Default account for bill lines without an item that has its own account."
+        }
+      }
+    },
+    "currencies": {
+      "title": "Currencies",
+      "symbol": "Symbol",
+      "codeHint": "Three-letter ISO 4217 code, e.g. USD. Cannot be changed once saved."
+    },
+    "terms": {
+      "title": "Payment terms",
+      "days": "Term (days)",
+      "daysHint": "Due date = document date + this many days."
+    },
+    "matrix": {
+      "title": "Role permission matrix",
+      "intro": "Default access of each role per module. Per-user overrides can change this.",
+      "feature": "Module",
+      "legend": "C = create, R = read, U = update/process, D = delete/close."
+    }
+  },
+  "system": {
+    "stats": {
+      "users": "Users",
+      "partners": "Partners",
+      "accounts": "Accounts",
+      "journals": "Posted journals",
+      "invoices": "Invoices & bills",
+      "open_periods": "Open periods",
+      "demo_mode": "Demo mode"
+    },
+    "journals14d": "Journals posted, last 14 days",
+    "lastAudit": "Recent activity",
+    "openAudit": "Open audit trail",
+    "lastErrors": "Recent errors",
+    "errorLog": "Application error log",
+    "when": "Time",
+    "source": "Source",
+    "message": "Message",
+    "allSources": "All sources",
+    "seedTitle": "Load demo data",
+    "seedBody": "Creates a sample company with 10 months of transactions through the real RPCs, plus demo users (*.findesk.demo, password Demo12345). Skipped when transactions already exist.",
+    "seedAction": "Load demo data",
+    "seedConfirmTitle": "Load demo data?",
+    "seedConfirmBody": "This takes a few seconds and adds a lot of sample data.",
+    "seedDone": "Demo data created: {journals} journals, {invoices} invoices & bills.",
+    "seedSkipped": "Demo data skipped because transactions already exist.",
+    "resetTitle": "Factory reset",
+    "resetBody": "Deletes all transactions, master data, demo users and logs, then restores default settings. This cannot be undone.",
+    "resetAction": "Reset all data",
+    "confirmTitle": "Reset all data?",
+    "confirmBody": "Type {word} to continue.",
+    "resetDone": "Data has been reset."
+  },
+  "guide": {
+    "intro": "Who does what in FinDesk and the everyday workflows. Every card links to its module.",
+    "rolesTitle": "Roles",
+    "topicsTitle": "Workflows",
+    "open": "Open",
+    "noMatch": "No matching guide",
+    "roles": {
+      "admin": {
+        "title": "Admin",
+        "body": "Full access: company settings, users and permissions, account mapping, and reopening closed periods or fiscal years."
+      },
+      "manager": {
+        "title": "Finance Manager",
+        "body": "Approves journals, bills, payments and expense claims; closes periods; reads every report and the audit trail; edits company settings."
+      },
+      "accountant": {
+        "title": "Accountant",
+        "body": "Maintains the chart of accounts, journals, tax, fixed assets, budgets and bank reconciliation; processes invoices and bills; approves other people's documents."
+      },
+      "staff": {
+        "title": "Finance Staff",
+        "body": "Creates invoices, bills, receipts, payments and cash transactions and submits them. Can view journals and reports but cannot approve."
+      },
+      "auditor": {
+        "title": "Auditor",
+        "body": "Read-only: every module, the financial reports and the audit trail. Cannot change anything."
+      },
+      "employee": {
+        "title": "Employee",
+        "body": "Submits and tracks their own expense claims only."
+      }
+    },
+    "topics": {
+      "sales": {
+        "title": "Sales cycle",
+        "items": [
+          "Make sure the customer exists under Customers & vendors, with tax ID and payment terms.",
+          "Create a sales invoice: enter lines and pick VAT 12% (DPP 11/12); the server computes totals.",
+          "Post the invoice. If it exceeds the customer's credit limit it waits for approval.",
+          "Record the receipt when the customer pays and allocate it to invoices; enter any tax withheld by the customer.",
+          "Watch receivables aging and follow up overdue invoices."
+        ]
+      },
+      "purchases": {
+        "title": "Purchase cycle",
+        "items": [
+          "Enter the vendor bill from the original document; set PPh 23/4(2) on the line when you withhold it.",
+          "Submit the bill; amounts above the approval threshold need someone else's approval.",
+          "Plan payments from payables aging and the dashboard cash forecast.",
+          "Create the vendor payment, allocate it to bills, then post it.",
+          "Use a debit note for returns or price corrections instead of editing a posted bill."
+        ]
+      },
+      "cash": {
+        "title": "Cash & bank",
+        "items": [
+          "Record cash in and cash out that do not come from invoices or bills (e.g. utilities, bank interest).",
+          "Use account transfers to move funds, including petty cash top-ups.",
+          "Foreign-currency accounts are booked at the day's rate; the rupiah balance follows the transaction rate.",
+          "Cash out above the approval threshold waits for approval before posting.",
+          "Check physical cash and bank statements against the books regularly."
+        ]
+      },
+      "reconcile": {
+        "title": "Bank reconciliation",
+        "items": [
+          "Import or type the bank statement for one account and one period.",
+          "Match every bank line with a book transaction.",
+          "Book lines missing from the books directly, such as admin fees or interest.",
+          "Make sure the bank and book balances differ by zero, then finish the reconciliation."
+        ]
+      },
+      "tax": {
+        "title": "Tax",
+        "items": [
+          "VAT 12% is computed on a DPP of 11/12 of the selling price (effectively 11%) per PMK 131/2024; luxury goods use the full DPP.",
+          "Enter the tax invoice number after the invoice is posted.",
+          "PPh 23 (services 2%) and PPh 4(2) (e.g. rent 10%) are withheld on bill lines and become tax payable.",
+          "PPh 21 is booked as tax payable from payroll and paid monthly.",
+          "At period end, run VAT settlement to move output and input VAT into payable or overpaid.",
+          "Use the VAT and withholding reports as the basis for monthly tax returns."
+        ]
+      },
+      "assets": {
+        "title": "Assets & depreciation",
+        "items": [
+          "Register fixed assets with category, cost, in-service date and useful life.",
+          "Choose straight line or double declining balance.",
+          "Run depreciation every period; skipped months are caught up automatically.",
+          "Check the depreciation schedule for book value per month.",
+          "Record a disposal when an asset is sold or written off; gain/loss comes from book value."
+        ]
+      },
+      "closing": {
+        "title": "Monthly close",
+        "items": [
+          "Post this month's recurring journals (rent, amortisation, accruals).",
+          "Run fixed-asset depreciation for the period.",
+          "Finish the reconciliation of every bank account.",
+          "Run VAT settlement for the tax period.",
+          "Run the month-end FX revaluation for foreign-currency balances.",
+          "Review the period checklist, then close the period; submitted documents block closing."
+        ]
+      },
+      "approval": {
+        "title": "Approval (maker-checker)",
+        "items": [
+          "The creator of a document can never approve it.",
+          "Manual journals (when required), bills and payments above the threshold, invoices over the credit limit and every expense claim go to the queue.",
+          "Approvers open Approvals, check the details, then approve or reject with a reason.",
+          "Rejected documents return to draft for the creator to fix.",
+          "Status changes of invoices, bills, payments, cash and claims are recorded in the audit trail."
+        ]
+      },
+      "reports": {
+        "title": "Reports",
+        "items": [
+          "The balance sheet shows the position at a date; the check line Assets = Liabilities + Equity must be zero.",
+          "The income statement can be filtered by cost center or project and compared with another period.",
+          "The cash flow uses the indirect method and ties to the closing cash balance.",
+          "The trial balance proves debits equal credits; click an account to open its ledger.",
+          "Export to Excel/CSV/PDF or print straight from every report."
+        ]
+      }
+    }
+  }
+}

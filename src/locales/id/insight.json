@@ -1,0 +1,474 @@
+{
+  "dashboard": {
+    "cashPosition": "Posisi kas & bank",
+    "cashAsOf": "Saldo buku per {date}",
+    "openCash": "Buka kas & bank",
+    "noBanks": "Belum ada rekening kas atau bank aktif.",
+    "receivable": "Piutang usaha",
+    "payable": "Hutang usaha",
+    "overdue": "Lewat jatuh tempo {amount}",
+    "revenue": "Pendapatan",
+    "expense": "Beban",
+    "expenseSub": "Beban {amount}",
+    "netIncome": "Laba bersih",
+    "netMargin": "Margin bersih {n}%",
+    "net": "Laba bersih",
+    "grossMargin": "Margin laba kotor",
+    "grossMarginSub": "Laba kotor ÷ penjualan",
+    "currentRatio": "Rasio lancar",
+    "currentRatioSub": "Aset lancar ÷ liabilitas jangka pendek",
+    "dsoDpo": "DSO / DPO (hari)",
+    "dsoDpoSub": "Rata-rata hari tagih / hari bayar",
+    "approvals": "Menunggu persetujuan",
+    "approvalsWaiting": "Dokumen perlu diputuskan",
+    "approvalsClear": "Tidak ada antrean",
+    "monthly": "Pendapatan vs beban, 12 bulan",
+    "expenseBreakdown": "Komposisi beban",
+    "cashFlow": "Kas masuk & keluar per bulan",
+    "cashIn": "Kas masuk",
+    "cashOut": "Kas keluar",
+    "forecast": "Proyeksi kas 90 hari",
+    "forecastNet": "Selisih {amount}",
+    "forecastHint": "Dari invoice dan tagihan yang belum lunas menurut jatuh temponya; yang sudah lewat masuk minggu ini.",
+    "expectedIn": "Perkiraan masuk",
+    "expectedOut": "Perkiraan keluar",
+    "buckets": {
+      "d0_7": "0–7 hari",
+      "d8_30": "8–30 hari",
+      "d31_60": "31–60 hari",
+      "d61_90": "61–90 hari"
+    },
+    "topCustomers": "Pelanggan teratas (penjualan bersih)",
+    "seeAll": "Lihat semua",
+    "actions": {
+      "invoice": "Invoice baru",
+      "bill": "Tagihan baru",
+      "journal": "Jurnal baru"
+    },
+    "cashVs": "dibanding {month}"
+  },
+  "reports": {
+    "tabs": {
+      "balance": "Neraca",
+      "income": "Laba rugi",
+      "cashflow": "Arus kas",
+      "trial": "Neraca saldo",
+      "equity": "Perubahan ekuitas"
+    },
+    "account": "Akun",
+    "asOf": "Per {date}",
+    "asOfLabel": "Per tanggal",
+    "compareWith": "Bandingkan",
+    "hideZero": "Sembunyikan saldo nol",
+    "change": "Perubahan",
+    "totalOf": "Total {name}",
+    "balanced": "Seimbang",
+    "difference": "Selisih {amount}",
+    "allCostCenters": "Semua pusat biaya",
+    "allProjects": "Semua proyek",
+    "bs": {
+      "assets": "Aset",
+      "currentAssets": "Aset lancar",
+      "nonCurrentAssets": "Aset tidak lancar",
+      "totalAssets": "Total aset",
+      "liabilitiesEquity": "Liabilitas dan ekuitas",
+      "currentLiabilities": "Liabilitas jangka pendek",
+      "longTermLiabilities": "Liabilitas jangka panjang",
+      "totalLiabilities": "Total liabilitas",
+      "equity": "Ekuitas",
+      "cye": "Laba (rugi) tahun berjalan belum ditutup",
+      "totalLiabilitiesEquity": "Total liabilitas dan ekuitas",
+      "check": "Aset = Liabilitas + Ekuitas ({date})"
+    },
+    "is": {
+      "revenue": "Pendapatan",
+      "cogs": "Harga pokok penjualan",
+      "grossProfit": "Laba kotor",
+      "opex": "Beban operasional",
+      "operatingProfit": "Laba usaha",
+      "otherIncome": "Pendapatan lain-lain",
+      "otherExpense": "Beban lain-lain",
+      "profitBeforeTax": "Laba sebelum pajak",
+      "tax": "Beban pajak penghasilan",
+      "netIncome": "Laba bersih",
+      "ofRevenue": "% pendapatan",
+      "check": "Laba bersih = total pendapatan − total beban di buku besar"
+    },
+    "cf": {
+      "operating": "Aktivitas operasi",
+      "investing": "Aktivitas investasi",
+      "financing": "Aktivitas pendanaan",
+      "operatingTotal": "Kas bersih dari aktivitas operasi",
+      "investingTotal": "Kas bersih dari aktivitas investasi",
+      "financingTotal": "Kas bersih dari aktivitas pendanaan",
+      "netIncome": "Laba (rugi) bersih",
+      "changeIn": "Perubahan {name}",
+      "none": "Tidak ada mutasi",
+      "netChange": "Kenaikan (penurunan) kas bersih",
+      "opening": "Kas & bank awal periode",
+      "closing": "Kas & bank akhir periode",
+      "hint": "Metode tidak langsung: laba bersih disesuaikan dengan perubahan akun non-kas. Angka dalam kurung berarti kas keluar.",
+      "check": "Kas akhir sesuai saldo buku kas & bank ({amount})"
+    },
+    "tb": {
+      "opening": "Saldo awal",
+      "closing": "Saldo akhir",
+      "excludeClosing": "Tanpa jurnal penutup",
+      "hint": "Saldo positif = debit, dalam kurung = kredit. Klik akun untuk membuka buku besarnya.",
+      "check": "Total debit = total kredit",
+      "checkClosing": "Saldo akhir seluruh akun berjumlah nol"
+    },
+    "eq": {
+      "opening": "Saldo awal",
+      "movement": "Mutasi",
+      "closing": "Saldo akhir",
+      "total": "Total ekuitas",
+      "explain": "Penjelasan mutasi",
+      "netIncome": "Laba bersih periode (laba rugi)",
+      "other": "Perubahan lain (setoran modal, dividen, koreksi)",
+      "totalMovement": "Total mutasi ekuitas",
+      "check": "Ekuitas akhir = total ekuitas di neraca"
+    }
+  },
+  "audit": {
+    "title": "Jejak audit",
+    "when": "Waktu",
+    "actor": "Pengguna",
+    "action": "Aksi",
+    "entity": "Data",
+    "changes": "Field berubah",
+    "field": "Kolom",
+    "before": "Sebelum",
+    "after": "Sesudah",
+    "system": "Sistem",
+    "allEntities": "Semua data",
+    "allActors": "Semua pengguna",
+    "noChanges": "Tidak ada perubahan field yang tercatat.",
+    "limited": "Menampilkan {n} catatan terbaru. Persempit rentang tanggal atau filter untuk melihat yang lain.",
+    "actions": {
+      "insert": "Tambah",
+      "update": "Ubah",
+      "delete": "Hapus",
+      "reset": "Reset data"
+    },
+    "entities": {
+      "invoice": "Invoice / tagihan",
+      "payment": "Penerimaan / pembayaran",
+      "t_cash_txns": "Kas masuk / keluar",
+      "t_bank_transfers": "Transfer antar rekening",
+      "t_expense_claims": "Reimburse",
+      "t_bank_statements": "Rekening koran",
+      "asset": "Aset tetap",
+      "period": "Periode",
+      "fiscal_year": "Tahun buku",
+      "m_accounts": "Bagan akun",
+      "m_account_map": "Pemetaan akun",
+      "m_taxes": "Pajak",
+      "m_partners": "Pelanggan & pemasok",
+      "m_bank_accounts": "Rekening kas & bank",
+      "m_currencies": "Mata uang",
+      "settings": "Pengaturan perusahaan",
+      "profile": "Profil pengguna",
+      "role_permission": "Hak akses peran",
+      "access_override": "Hak akses khusus"
+    }
+  },
+  "settings": {
+    "tabs": {
+      "company": "Perusahaan",
+      "accountMap": "Pemetaan akun",
+      "currencies": "Mata uang",
+      "terms": "Syarat pembayaran",
+      "users": "Pengguna"
+    },
+    "company": {
+      "identity": "Identitas perusahaan",
+      "logo": "Logo (PNG/JPG/WebP, maks. 2 MB)",
+      "name": "Nama tampilan",
+      "legalName": "Nama badan usaha",
+      "legalNameHint": "mis. PT Nusantara Solusi",
+      "address": "Alamat",
+      "phone": "Telepon",
+      "email": "Email",
+      "timezone": "Zona waktu",
+      "tax": "Perpajakan",
+      "isPkp": "Pengusaha Kena Pajak (PKP)",
+      "isPkpHint": "Wajib memungut PPN dan menerbitkan faktur pajak.",
+      "approval": "Persetujuan",
+      "requireJournalApproval": "Jurnal umum perlu disetujui",
+      "requireJournalApprovalHint": "Jurnal manual diajukan dulu dan disetujui orang lain sebelum diposting.",
+      "approvalThreshold": "Batas nilai persetujuan",
+      "approvalThresholdHint": "Tagihan pemasok, pembayaran, dan kas keluar senilai ini atau lebih harus disetujui.",
+      "documents": "Dokumen",
+      "invoiceFooter": "Catatan kaki invoice",
+      "invoiceFooterHint": "mis. nomor rekening untuk transfer",
+      "prefixes": "Awalan nomor dokumen",
+      "prefixesHint": "Nomor dibuat server saat posting: AWALAN/TAHUN/BULAN/URUT."
+    },
+    "zones": {
+      "Asia/Jakarta": "WIB (Asia/Jakarta)",
+      "Asia/Makassar": "WITA (Asia/Makassar)",
+      "Asia/Jayapura": "WIT (Asia/Jayapura)"
+    },
+    "prefixKinds": {
+      "journal": "Jurnal umum",
+      "sales_invoice": "Invoice penjualan",
+      "sales_credit": "Nota kredit",
+      "purchase_bill": "Tagihan pemasok",
+      "purchase_debit": "Nota debit",
+      "payment_in": "Penerimaan",
+      "payment_out": "Pembayaran",
+      "cash_in": "Kas masuk",
+      "cash_out": "Kas keluar",
+      "transfer": "Transfer",
+      "expense": "Reimburse",
+      "asset": "Aset tetap",
+      "depreciation": "Penyusutan",
+      "vat": "Setor PPN",
+      "fx": "Revaluasi kurs",
+      "closing": "Jurnal penutup",
+      "budget": "Anggaran"
+    },
+    "accountMap": {
+      "title": "Pemetaan akun sistem",
+      "intro": "Akun yang dipakai otomatis saat sistem membuat jurnal. Ganti hanya jika bagan akun Anda berbeda; perubahan berlaku untuk transaksi berikutnya.",
+      "keys": {
+        "receivable": {
+          "label": "Piutang usaha",
+          "body": "Akun kontrol piutang pelanggan. Semua invoice dan penerimaan dicatat di sini per pelanggan."
+        },
+        "payable": {
+          "label": "Hutang usaha",
+          "body": "Akun kontrol hutang ke pemasok. Semua tagihan dan pembayaran dicatat di sini per pemasok."
+        },
+        "vat_payable": {
+          "label": "Hutang PPN",
+          "body": "Tujuan saldo PPN keluaran dikurangi masukan saat setor PPN bila hasilnya kurang bayar."
+        },
+        "vat_overpaid": {
+          "label": "PPN lebih bayar",
+          "body": "Tujuan saldo PPN saat setor PPN bila masukan lebih besar dari keluaran."
+        },
+        "employee_payable": {
+          "label": "Hutang reimburse karyawan",
+          "body": "Menampung klaim reimburse yang sudah disetujui sampai dibayar."
+        },
+        "retained_earnings": {
+          "label": "Laba ditahan",
+          "body": "Tujuan laba (rugi) bersih saat tutup tahun buku."
+        },
+        "opening_equity": {
+          "label": "Ekuitas saldo awal",
+          "body": "Penyeimbang saat memasukkan saldo awal akun pertama kali."
+        },
+        "fx_gain": {
+          "label": "Laba selisih kurs",
+          "body": "Keuntungan kurs saat pelunasan atau revaluasi valuta asing."
+        },
+        "fx_loss": {
+          "label": "Rugi selisih kurs",
+          "body": "Kerugian kurs saat pelunasan atau revaluasi valuta asing."
+        },
+        "rounding": {
+          "label": "Selisih pembulatan",
+          "body": "Menampung sisa pembulatan kecil (maks. 1) agar jurnal valuta asing seimbang."
+        },
+        "bank_fee": {
+          "label": "Biaya bank",
+          "body": "Biaya administrasi atau transfer yang dipotong bank saat penerimaan atau pembayaran."
+        },
+        "asset_gain": {
+          "label": "Laba pelepasan aset",
+          "body": "Keuntungan saat aset tetap dijual di atas nilai bukunya."
+        },
+        "asset_loss": {
+          "label": "Rugi pelepasan aset",
+          "body": "Kerugian saat aset tetap dijual atau dihapus di bawah nilai bukunya."
+        },
+        "sales_revenue": {
+          "label": "Pendapatan penjualan",
+          "body": "Akun pendapatan bawaan untuk baris invoice tanpa barang/jasa yang punya akun sendiri."
+        },
+        "purchase_expense": {
+          "label": "Pembelian / beban bawaan",
+          "body": "Akun bawaan untuk baris tagihan pemasok tanpa barang/jasa yang punya akun sendiri."
+        }
+      }
+    },
+    "currencies": {
+      "title": "Mata uang",
+      "symbol": "Simbol",
+      "codeHint": "Kode ISO 4217 tiga huruf, mis. USD. Tidak bisa diubah setelah disimpan."
+    },
+    "terms": {
+      "title": "Syarat pembayaran",
+      "days": "Jangka waktu (hari)",
+      "daysHint": "Jatuh tempo = tanggal dokumen + jumlah hari ini."
+    },
+    "matrix": {
+      "title": "Matriks hak akses peran",
+      "intro": "Hak bawaan tiap peran per modul. Hak khusus per pengguna bisa menimpa ini.",
+      "feature": "Modul",
+      "legend": "C = buat, R = lihat, U = ubah/proses, D = hapus/tutup."
+    }
+  },
+  "system": {
+    "stats": {
+      "users": "Pengguna",
+      "partners": "Mitra",
+      "accounts": "Akun",
+      "journals": "Jurnal terposting",
+      "invoices": "Invoice & tagihan",
+      "open_periods": "Periode terbuka",
+      "demo_mode": "Mode demo"
+    },
+    "journals14d": "Jurnal diposting, 14 hari terakhir",
+    "lastAudit": "Aktivitas terakhir",
+    "openAudit": "Buka jejak audit",
+    "lastErrors": "Error terakhir",
+    "errorLog": "Log error aplikasi",
+    "when": "Waktu",
+    "source": "Sumber",
+    "message": "Pesan",
+    "allSources": "Semua sumber",
+    "seedTitle": "Isi data demo",
+    "seedBody": "Membuat perusahaan contoh dengan 10 bulan transaksi lewat RPC asli, plus pengguna demo (*.findesk.demo, sandi Demo12345). Dilewati bila sudah ada transaksi.",
+    "seedAction": "Isi data demo",
+    "seedConfirmTitle": "Isi data demo?",
+    "seedConfirmBody": "Proses ini memakan waktu beberapa detik dan menambah banyak data contoh.",
+    "seedDone": "Data demo dibuat: {journals} jurnal, {invoices} invoice & tagihan.",
+    "seedSkipped": "Data demo dilewati karena sudah ada transaksi.",
+    "resetTitle": "Reset pabrik",
+    "resetBody": "Menghapus semua transaksi, master data, pengguna demo, dan log, lalu memulihkan pengaturan bawaan. Tidak bisa dibatalkan.",
+    "resetAction": "Reset semua data",
+    "confirmTitle": "Yakin reset semua data?",
+    "confirmBody": "Ketik {word} untuk melanjutkan.",
+    "resetDone": "Data sudah direset."
+  },
+  "guide": {
+    "intro": "Ringkasan siapa mengerjakan apa dan langkah kerja harian FinDesk. Setiap kartu punya tautan ke modulnya.",
+    "rolesTitle": "Peran",
+    "topicsTitle": "Alur kerja",
+    "open": "Buka",
+    "noMatch": "Tidak ada panduan yang cocok",
+    "roles": {
+      "admin": {
+        "title": "Admin",
+        "body": "Akses penuh: mengatur perusahaan, pengguna dan hak akses, pemetaan akun, serta membuka kembali periode atau tahun buku yang sudah ditutup."
+      },
+      "manager": {
+        "title": "Finance Manager",
+        "body": "Menyetujui jurnal, tagihan, pembayaran, dan reimburse; menutup periode; membaca semua laporan dan jejak audit; mengubah pengaturan perusahaan."
+      },
+      "accountant": {
+        "title": "Accountant",
+        "body": "Mengelola bagan akun, jurnal umum, pajak, aset tetap, anggaran, dan rekonsiliasi bank; memproses invoice dan tagihan; menyetujui dokumen orang lain."
+      },
+      "staff": {
+        "title": "Finance Staff",
+        "body": "Membuat invoice, tagihan, penerimaan, pembayaran, dan transaksi kas lalu mengajukannya. Bisa melihat jurnal dan laporan, tetapi tidak menyetujui."
+      },
+      "auditor": {
+        "title": "Auditor",
+        "body": "Hanya membaca: semua modul, laporan keuangan, dan jejak audit. Tidak bisa mengubah apa pun."
+      },
+      "employee": {
+        "title": "Employee",
+        "body": "Hanya mengajukan dan memantau reimburse miliknya sendiri."
+      }
+    },
+    "topics": {
+      "sales": {
+        "title": "Siklus penjualan",
+        "items": [
+          "Pastikan pelanggan sudah ada di Pelanggan & Pemasok, lengkap dengan NPWP dan syarat pembayaran.",
+          "Buat invoice penjualan: isi baris, pilih PPN 12% (DPP 11/12); total dihitung server.",
+          "Posting invoice. Bila melebihi batas kredit pelanggan, invoice menunggu persetujuan.",
+          "Catat penerimaan saat pelanggan membayar dan alokasikan ke invoice; isi PPh yang dipotong pelanggan bila ada.",
+          "Pantau umur piutang dan kirim pengingat untuk invoice yang lewat jatuh tempo."
+        ]
+      },
+      "purchases": {
+        "title": "Siklus pembelian",
+        "items": [
+          "Catat tagihan pemasok sesuai dokumen asli; isi PPh 23/4(2) di baris bila Anda pemotongnya.",
+          "Ajukan tagihan; nilai di atas batas persetujuan perlu disetujui orang lain.",
+          "Jadwalkan pembayaran dari umur hutang dan proyeksi kas di dashboard.",
+          "Buat pembayaran ke pemasok, alokasikan ke tagihan, lalu posting.",
+          "Gunakan nota debit untuk retur atau koreksi harga, bukan mengubah tagihan yang sudah diposting."
+        ]
+      },
+      "cash": {
+        "title": "Kas & bank",
+        "items": [
+          "Catat kas masuk dan kas keluar yang tidak berasal dari invoice atau tagihan (mis. biaya listrik, bunga bank).",
+          "Gunakan transfer antar rekening untuk memindahkan dana, termasuk isi ulang kas kecil.",
+          "Rekening valuta asing dicatat dengan kurs hari itu; saldo rupiah ikut kurs transaksi.",
+          "Kas keluar di atas batas persetujuan menunggu disetujui sebelum diposting.",
+          "Cocokkan saldo kas fisik dan rekening koran secara rutin."
+        ]
+      },
+      "reconcile": {
+        "title": "Rekonsiliasi bank",
+        "items": [
+          "Impor atau ketik rekening koran untuk satu rekening dan satu periode.",
+          "Cocokkan setiap mutasi bank dengan transaksi di buku.",
+          "Catat langsung mutasi yang belum ada di buku, seperti biaya admin atau bunga.",
+          "Pastikan selisih saldo bank dan saldo buku nol, lalu selesaikan rekonsiliasi."
+        ]
+      },
+      "tax": {
+        "title": "Pajak",
+        "items": [
+          "PPN 12% dihitung dari DPP 11/12 harga jual (efektif 11%), sesuai PMK 131/2024; barang mewah memakai DPP penuh.",
+          "Isi nomor faktur pajak setelah invoice diposting.",
+          "PPh 23 (jasa 2%) dan PPh 4(2) (mis. sewa 10%) dipotong di baris tagihan dan menjadi hutang pajak.",
+          "PPh 21 dicatat sebagai hutang pajak dari penggajian dan disetor tiap bulan.",
+          "Di akhir masa, jalankan setor PPN untuk memindahkan saldo keluaran dan masukan ke kurang bayar atau lebih bayar.",
+          "Gunakan laporan PPN dan PPh sebagai dasar pelaporan SPT Masa."
+        ]
+      },
+      "assets": {
+        "title": "Aset & penyusutan",
+        "items": [
+          "Daftarkan aset tetap dengan kategori, harga perolehan, tanggal pakai, dan umur manfaat.",
+          "Pilih metode garis lurus atau saldo menurun ganda.",
+          "Jalankan penyusutan tiap periode; bulan yang terlewat ikut dikejar otomatis.",
+          "Lihat jadwal penyusutan untuk nilai buku per bulan.",
+          "Catat pelepasan saat aset dijual atau dihapus; laba/rugi dihitung dari nilai buku."
+        ]
+      },
+      "closing": {
+        "title": "Tutup buku bulanan",
+        "items": [
+          "Posting jurnal berulang bulan ini (sewa, amortisasi, akrual).",
+          "Jalankan penyusutan aset tetap untuk periode tersebut.",
+          "Selesaikan rekonsiliasi semua rekening bank.",
+          "Jalankan setor PPN untuk masa pajak tersebut.",
+          "Jalankan revaluasi kurs per akhir bulan untuk saldo valuta asing.",
+          "Periksa daftar periksa periode lalu tutup periode; dokumen yang masih diajukan akan menghalangi."
+        ]
+      },
+      "approval": {
+        "title": "Persetujuan (maker-checker)",
+        "items": [
+          "Pembuat dokumen tidak pernah bisa menyetujui dokumennya sendiri.",
+          "Jurnal manual (bila diwajibkan), tagihan dan pembayaran di atas batas, invoice di atas batas kredit, dan semua reimburse masuk antrean.",
+          "Penyetuju membuka Persetujuan, memeriksa rincian, lalu menyetujui atau menolak dengan alasan.",
+          "Dokumen yang ditolak kembali ke draf untuk diperbaiki pembuatnya.",
+          "Perubahan status invoice, tagihan, pembayaran, kas, dan reimburse tercatat di jejak audit."
+        ]
+      },
+      "reports": {
+        "title": "Laporan",
+        "items": [
+          "Neraca menunjukkan posisi per tanggal; baris cek Aset = Liabilitas + Ekuitas harus nol.",
+          "Laba rugi bisa difilter per pusat biaya atau proyek dan dibandingkan dengan periode lain.",
+          "Arus kas memakai metode tidak langsung dan dicocokkan dengan saldo kas akhir.",
+          "Neraca saldo memastikan debit sama dengan kredit; klik akun untuk membuka buku besarnya.",
+          "Ekspor ke Excel/CSV/PDF atau cetak langsung dari setiap laporan."
+        ]
+      }
+    }
+  }
+}

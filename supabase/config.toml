@@ -1,0 +1,84 @@
+project_id = "qhczpfvaljhdyomwesap"
+
+# Every function verifies the caller's JWT. seed-admin is the exception: it
+# bootstraps the first Admin before any account exists, so it is guarded by
+# the SEED_ADMIN_SECRET header instead and refuses outright when that secret
+# is not configured.
+[functions.create-user]
+verify_jwt = true
+
+[functions.delete-user]
+verify_jwt = true
+
+[functions.reactivate-user]
+verify_jwt = true
+
+[functions.seed-admin]
+verify_jwt = false
+
+# Accounts are created by an Admin (create-user) or seed-admin; nobody signs up on their own.
+# A stray sign-up (e.g. Google) still gets a role-less profile (handle_new_user), so it reaches nothing.
+[auth]
+site_url = "https://findesk.mujahidin.my.id"
+additional_redirect_urls = ["http://localhost:8080"]
+enable_signup = false
+minimum_password_length = 8
+password_requirements = "lower_upper_letters_digits"
+
+# This switch turns the whole email provider on or off (login included), not
+# just email sign-ups.
+[auth.email]
+enable_signup = true
+# Changing a password needs the code emailed by auth.reauthenticate() (the profile page asks for it).
+secure_password_change = true
+
+# Resend SMTP: free tier only allows custom templates with own SMTP. The sender
+# domain must be verified in Resend; the key comes from the shell env on push.
+[auth.email.smtp]
+enabled = true
+host = "smtp.resend.com"
+port = 465
+user = "resend"
+pass = "env(RESEND_API_KEY)"
+admin_email = "no-reply@findesk.mujahidin.my.id"
+sender_name = "FinDesk"
+
+# Copies of the dashboard templates (see templates/README.md). The two security notifications
+# (password/email changed) are set in the Dashboard: Emails > Security.
+[auth.email.template.recovery]
+subject = "Atur ulang kata sandi FinDesk"
+content_path = "./supabase/templates/reset_password.html"
+
+[auth.email.template.confirmation]
+subject = "Konfirmasi akun FinDesk Anda"
+content_path = "./supabase/templates/confirm_sign_up.html"
+
+[auth.email.template.invite]
+subject = "Undangan bergabung ke FinDesk"
+content_path = "./supabase/templates/invite_user.html"
+
+[auth.email.template.reauthentication]
+subject = "Kode verifikasi FinDesk"
+content_path = "./supabase/templates/reauthentication.html"
+
+[auth.email.template.magic_link]
+subject = "Tautan masuk FinDesk"
+content_path = "./supabase/templates/magic_link_or_otp.html"
+
+[auth.email.template.email_change]
+subject = "Konfirmasi perubahan alamat email FinDesk"
+content_path = "./supabase/templates/change_email_address.html"
+
+# Deploy the frontend with VITE_TURNSTILE_SITE_KEY first: once on, every login without a token is rejected.
+[auth.captcha]
+enabled = true
+provider = "turnstile"
+secret = "env(SUPABASE_AUTH_CAPTCHA_SECRET)"
+
+[auth.external.google]
+# Off until the Google client ID + secret exist in the env; enabling without them breaks the push.
+enabled = false
+# The client ID is public; the secret stays in the env (or is set in the Dashboard).
+client_id = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID)"
+secret = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_SECRET)"
+skip_nonce_check = false

@@ -1,0 +1,23 @@
+node_modules
+dist
+coverage
+*.tsbuildinfo
+*.log
+
+.env
+.env.*
+!.env.example
+
+.vercel
+supabase/.temp
+supabase/.branches
+
+.claude/
+.agents/
+.playwright-mcp/
+.vscode/
+.idea/
+.DS_Store
+
+# gemini-web.mjs half-written downloads
+*.part
